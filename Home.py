@@ -4,8 +4,18 @@ import pandas as pd
 st.set_page_config(
     page_title="Loan Approval System",
     page_icon="🏦",
-    layout="wide"
+    layout="wide",
+    initial_sidebar_state="expanded"
 )
+
+# ---------- Sidebar navigation ----------
+with st.sidebar:
+    st.markdown("## 🏦 Loan Approval System")
+    st.caption("Application navigation")
+    st.page_link("Home.py", label="Home", icon="🏠")
+    st.page_link("pages/Analysis.py", label="Analysis", icon="📊")
+    st.page_link("pages/Prediction.py", label="Prediction", icon="📝")
+    st.divider()
 
 
 @st.cache_data
