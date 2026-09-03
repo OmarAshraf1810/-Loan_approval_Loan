@@ -8,15 +8,6 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# ---------- Sidebar navigation ----------
-with st.sidebar:
-    st.markdown("## 🏦 Loan Approval System")
-    st.caption("Application navigation")
-    st.page_link("pages/Analysis.py", label="Analysis", icon="📊")
-    st.page_link("pages/Prediction.py", label="Prediction", icon="📝")
-    st.divider()
-
-
 @st.cache_data
 def load_data():
     return pd.read_csv("synthetic_loan_approval_dataset.csv")
