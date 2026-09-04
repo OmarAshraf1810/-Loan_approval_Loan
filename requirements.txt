@@ -1,6 +1,6 @@
-streamlit
-pandas
-plotly
+streamlit==1.36.0
+pandas==1.4.4
+plotly==7.0.0
 scikit-learn==1.0.2
 numpy==1.22.3
 scipy==1.7.3
