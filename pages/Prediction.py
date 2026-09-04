@@ -18,9 +18,6 @@ st.set_page_config(
 with st.sidebar:
     st.markdown("## 🏦 Loan Approval System")
     st.caption("Application navigation")
-    st.page_link("Home.py", label="Home", icon="🏠")
-    st.page_link("pages/Analysis.py", label="Analysis", icon="📊")
-    st.page_link("pages/Prediction.py", label="Prediction", icon="📝")
     st.divider()
 
 
@@ -437,7 +434,6 @@ with btn_col:
     predict_clicked = st.button(
         "⚡ Predict loan approval",
         type="primary",
-        width="stretch",
         disabled=not model_loaded
     )
 

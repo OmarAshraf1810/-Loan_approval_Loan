@@ -22,7 +22,6 @@ prediction = st.Page(
 pg = st.navigation(
     [home, analysis, prediction],
     position="sidebar",
-    expanded=True
 )
 
 pg.run()
